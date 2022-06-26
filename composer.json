@@ -24,6 +24,7 @@
         "vinkla/hashids": "^10.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
         "fakerphp/faker": "^1.19",
         "mockery/mockery": "^1.5",
         "nunomaduro/collision": "^6.1",

@@ -21,14 +21,14 @@
         @auth
           @if (Auth::user()->hasRole('admin') || (Auth::user()->id == $url->user_id))
             <li class="inline-block pr-2">
-              <a href="{{route('short_url.edit', $url->keyword)}}" title="{{__('Edit')}}"
+              <a href="{{route('short_url.edit', $url->keyword)}}" title="{{__('string.edit__tooptip')}}"
                 class="btn-icon text-xs"
               >
                 @svg('icon-edit')
               </a>
             </li>
             <li class="inline-block">
-              <a href="{{route('dashboard.delete', $url->getRouteKey())}}" title="{{__('Delete')}}"
+              <a href="{{route('dashboard.delete', $url->getRouteKey())}}" title="{{__('string.delete__tooptip')}}"
                 class="btn-icon text-xs hover:text-red-700 active:text-red-600"
               >
                 @svg('icon-trash')
@@ -48,8 +48,8 @@
     </div>
     @endif
     <div class="w-full md:w-3/4 mt-8 sm:mt-0">
-      <b class="text-indigo-700">{{__('Shortened URL')}}</b>
-      <button title="{{__('Copy the shortened URL to clipboard')}}" data-clipboard-text="{{urlDisplay($url->short_url, false)}}"
+      <b class="text-indigo-700">{{__('string.copyShortened')}}</b>
+      <button title="{{__('string.copyShortened__tooltip')}}" data-clipboard-text="{{urlDisplay($url->short_url, false)}}"
         class="btn-clipboard btn-icon text-xs ml-4"
       >
         @svg('icon-clone')
@@ -62,8 +62,8 @@
 
       <br> <br>
 
-      <b class="text-indigo-700">{{__('Destination URL')}}</b>
-      <button title="{{__('Copy the destination URL to clipboard')}}" data-clipboard-text="{{ $url->long_url }}"
+      <b class="text-indigo-700">{{__('string.copyDestination')}}</b>
+      <button title="{{__('string.copyDestination__tooltip')}}" data-clipboard-text="{{ $url->long_url }}"
         class="btn-clipboard btn-icon text-xs ml-4"
       >
         @svg('icon-clone')
