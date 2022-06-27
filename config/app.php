@@ -175,6 +175,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Jenssegers\Date\DateServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -201,6 +202,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Date' => Jenssegers\Date\Date::class,
     ])->toArray(),
 
 ];

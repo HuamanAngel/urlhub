@@ -37,5 +37,13 @@ return [
     'button__login' => 'Log in',
     'username'  =>  'Username',
     'create__account'  =>  'Create account',
-    'not__registred'  =>  'Sorry, not allowed to register by administrator'
+    'not__registred'  =>  'Sorry, not allowed to register by administrator',
+
+    //Route: /admin/edit/{keyword}
+    'edit_Details'  => 'Edit URL',
+    'short_URL'   => 'Short URL',
+    'Title'  => 'Title',
+    'Destination_URL'  => 'Destination URL',
+    'Save_Changes'  =>'Save Changes',
+    'Enter_your_long_URL'  =>'Enter your long URL'
 ];

@@ -36,5 +36,14 @@ return [
     'button__login' => 'وارد شدن',
     'username'  =>  'نام کاربری',
     'create__account'  =>  'ایجاد حساب کاربری',
-    'not__registred'  =>  'با عرض پوزش، مدیر مجاز به ثبت نام نیست'
+    'not__registred'  =>  'با عرض پوزش، مدیر مجاز به ثبت نام نیست',
+
+    //Route: /admin/edit/{keyword}
+    'edit_Details'  => 'URL ویرایش جزئیات',
+    'short_URL'   => 'کوتاه URL',
+    'Title'  => 'عنوان',
+    'Destination_URL'  => 'مقصد URL',
+    'Save_Changes'  =>'ذخیره تغییرات',
+    'Enter_your_long_URL'  =>'طولانی خود را وارد کنید URL'
+
 ];

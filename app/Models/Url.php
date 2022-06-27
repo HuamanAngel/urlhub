@@ -10,6 +10,9 @@ use Illuminate\Support\Str;
 use RandomLib\Factory as RandomLibFactory;
 use Spatie\Url\Url as SpatieUrl;
 use Symfony\Component\HttpFoundation\IpUtils;
+use Jenssegers\Date\Date;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\App;
 
 class Url extends Model
 {
@@ -345,5 +348,20 @@ class Url extends Model
         $factory = new RandomLibFactory;
 
         return $factory->getMediumStrengthGenerator()->generateString($length, $alphabet);
+    }
+
+    public function getCreatedAtAttribute($date)
+    {
+       
+        if (App::getLocale()=='en') {
+          
+          }else {
+             
+             Date::setLocale('fa');
+         }
+         return new Date($date);
+
+
+        
     }
 }
