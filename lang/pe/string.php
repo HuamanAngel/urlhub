@@ -29,4 +29,12 @@ return [
     'message_duplicate'   => 'اینو کپی کن',
     'message_urlExist' => 'پیوند از قبل وجود دارد',
 
+    //login-register
+    'e-Mail__Username'  => 'ایمیل / نام کاربری',
+    'password'  =>  'کلمه عبور',
+    'forgot__password' => 'رمز عبور خود را فراموش کرده اید؟',
+    'button__login' => 'وارد شدن',
+    'username'  =>  'نام کاربری',
+    'create__account'  =>  'ایجاد حساب کاربری',
+    'not__registred'  =>  'با عرض پوزش، مدیر مجاز به ثبت نام نیست'
 ];

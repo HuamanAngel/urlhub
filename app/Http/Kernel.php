@@ -36,6 +36,7 @@ class Kernel extends HttpKernel
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
             \App\Http\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
+            \App\Http\Middleware\CheckLanguage::class,
         ],
 
         'api' => [
@@ -66,5 +67,6 @@ class Kernel extends HttpKernel
         'urlhublinkchecker' => \App\Http\Middleware\UrlHubLinkChecker::class,
         'role'              => \Spatie\Permission\Middlewares\RoleMiddleware::class,
         'permission'        => \Spatie\Permission\Middlewares\PermissionMiddleware::class,
+        'translate'         => \App\Http\Middleware\CheckLanguage::class,
     ];
 }

@@ -2,6 +2,26 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex justify-between h-16">
       <a class="navbar-brand" href="{{ url('/') }}">{{appName()}}</a>
+      {{-- <div class="dropdown">
+        
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">ES</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">ENG</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">ITA</a>
+        </div>
+      </div> --}}
+      
+      @if (app()->getLocale()=='en')
+          <button><a class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" href="{{route('language','pe')}}">
+            PERSIAN
+          </a></button>
+      @else
+          <button><a class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" href="{{route('language','en')}}">
+            ENGLISH
+          </a></button>
+      @endif
       @auth
         <div class="hidden sm:flex sm:items-center sm:ml-6">
           {{-- Settings Dropdown --}}

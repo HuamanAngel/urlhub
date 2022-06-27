@@ -11,11 +11,11 @@
   <div class="w-full sm:max-w-md mt-6 px-12 py-8 overflow-hidden sm:rounded-lg
         bg-white sm:shadow-md">
     @if ( ! Config::get('urlhub.registration') )
-      <p class="text-muted">{{__('Sorry, not allowed to register by administrator')}}</p>
+      <p class="text-muted">{{__('string.not__registred')}}</p>
     @else
       <form method="post" action="{{ route('register') }}" aria-label="{{__('Register')}}">
       @csrf
-        <label class="text-slate-700">{{__('Username')}}</label>
+        <label class="text-slate-700">{{__('string.username')}}</label>
         <input class="form-input mt-1" id="name" type="text" name="name" required autofocus>
 
         @if ($errors->has('name'))
@@ -24,7 +24,7 @@
 
         <div class="mt-4"></div>
 
-        <label class="text-slate-700">{{__('Email')}}</label>
+        <label class="text-slate-700">{{__('string.email')}}</label>
         <input class="form-input mt-1" id="email" type="email" name="email" required>
 
         @if ($errors->has('email'))
@@ -33,7 +33,7 @@
 
         <div class="mt-4"></div>
 
-        <label class="text-slate-700">{{__('Password')}}</label>
+        <label class="text-slate-700">{{__('string.password')}}</label>
         <input class="form-input mt-1" id="password" type="password" name="password" required>
 
         @if ($errors->has('password'))
@@ -42,11 +42,11 @@
 
         <div class="mt-4"></div>
 
-        <label class="text-slate-700">{{__('Password')}}</label>
+        <label class="text-slate-700">{{__('string.password')}}</label>
         <input class="form-input mt-1" id="password-confirm" type="password" name="password_confirmation" required>
 
         <div class="flex items-center justify-end mt-8">
-          <button type="submit" class="btn btn-primary">{{__('Create Account')}}</button>
+          <button type="submit" class="btn btn-primary">{{__('string.create__account')}}</button>
         </div>
       </form>
     @endif

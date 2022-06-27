@@ -29,25 +29,25 @@
           <input type="hidden" name="previous" value="{{ URL::previous() }}">
         @endif
         <label for="email" class="block font-medium text-sm text-slate-700">
-          {{__('E-Mail / Username')}}
+          {{__('string.e-Mail__Username')}}
         </label>
         <input class="form-input mt-1" id="identity" name="identity" type="text" value="{{ old('identity') }}" required autofocus>
       </div>
 
       <div class="mt-4">
         <label for="password" class="block font-medium text-sm text-slate-700">
-          {{__('Password')}}
+          {{__('string.password')}}
         </label>
         <input class="form-input mt-1" id="password" type="password" name="password" required="required" autocomplete="current-password">
       </div>
 
       <div class="flex items-center justify-end mt-4">
         <a href="{{ route('password.request') }}" class="text-sm text-slate-600 hover:text-slate-900 underline">
-          {{__('Forgot your password?')}}
+          {{__('string.forgot__password')}}
         </a>
 
         <button type="submit" class="btn btn-primary ml-4">
-          {{__('Log in')}}
+          {{__('string.button__login')}}
         </button>
       </div>
     </form>

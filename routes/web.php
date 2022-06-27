@@ -43,3 +43,8 @@ Route::namespace('Dashboard')->prefix('admin')->group(function () {
 });
 
 Route::get('/{keyword}', UrlRedirectController::class);
+
+Route::get('/lang/{language}', function ($language) {
+    Session::put('language',$language);
+    return redirect()->back();
+})->name('language');

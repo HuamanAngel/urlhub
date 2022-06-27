@@ -14,7 +14,7 @@ return [
     'resetPassword'   => 'Reset Password',
     'sendPassword'   => 'Send Password Reset Link',
     'delete__tooptip'   => 'Delete.',
-    'email' => 'E-mail'
+    'email' => 'E-mail',
 
     // NavBar
     'nav_header__dashboard' => 'Dashboard',
@@ -30,4 +30,12 @@ return [
     'message_duplicate'   => 'Duplicate this',
     'message_urlExist' => 'Link already exists',
 
+    //login-register
+    'e-Mail__Username'  => 'E-Mail / Username',
+    'password'  =>  'Password',
+    'forgot__password' => 'Forgot your password?',
+    'button__login' => 'Log in',
+    'username'  =>  'Username',
+    'create__account'  =>  'Create account',
+    'not__registred'  =>  'Sorry, not allowed to register by administrator'
 ];
