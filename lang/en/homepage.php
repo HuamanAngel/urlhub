@@ -9,4 +9,5 @@ return [
     'shorten' => 'Shorten',
     'custom_url' => 'Custom URL (optional)',
     'replace_url' => 'Replace clunky URLs with meaningful short links that get more clicks.',
+    'incorrect_url' => 'Incorrect link format. The link must begin "http://" or "https://".',
 ];
