@@ -44,6 +44,25 @@ return [
     'Title'  => 'عنوان',
     'Destination_URL'  => 'مقصد URL',
     'Save_Changes'  =>'ذخیره تغییرات',
-    'Enter_your_long_URL'  =>'طولانی خود را وارد کنید URL'
+    'Enter_your_long_URL'  =>'طولانی خود را وارد کنید URL',
+
+    //Route: /admin/Dashboard
+    'Dashboard' => 'داشبورد',
+    'All' => 'همه',
+    'Me' => 'من',
+    'Guests' => 'میهمانان',
+    'Free_Space' => 'فضای خالی',
+    'of' => 'از',
+    'URLs' => 'هاURL',
+    'Clicks' => 'کلیک می کند',
+    'Users' => 'کاربران',
+    'My_URLs' => 'منهاURL',
+    'Add_URL' =>'اضافه کردن URL',
+    'Short_URL' => 'کوتاه URL',
+    'Destination_URL' => 'URL مقصد',
+    'CLICKS' => 'کلیک می کند',
+    'CREATED_AT' => 'ایجاد شده در',
+    'ACTIONS' => 'اقدامات'
+
 
 ];

@@ -136,29 +136,29 @@ final class MyUrlTable extends PowerGridComponent
     {
         return [
             Column::add()
-                ->title('Short URL')
+                ->title(__('string.Short_URL'))
                 ->field('keyword')
                 ->sortable()
                 ->searchable(),
 
             Column::add()
-                ->title('Destination URL')
+                ->title(__('string.Destination_URL'))
                 ->field('long_url')
                 ->sortable()
                 ->searchable(),
 
             Column::add()
-                ->title('CLICKS')
+                ->title(__('string.CLICKS'))
                 ->field('clicks'),
 
             Column::add()
-                ->title('CREATED AT')
+                ->title(__('string.CREATED_AT'))
                 ->field('created_at_formatted', 'created_at')
                 ->searchable()
                 ->sortable(),
 
             Column::add()
-                ->title('ACTIONS')
+                ->title(__('string.ACTIONS'))
                 ->field('action')
                 ->searchable(),
         ];

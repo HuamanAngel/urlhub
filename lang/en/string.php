@@ -45,5 +45,27 @@ return [
     'Title'  => 'Title',
     'Destination_URL'  => 'Destination URL',
     'Save_Changes'  =>'Save Changes',
-    'Enter_your_long_URL'  =>'Enter your long URL'
+    'Enter_your_long_URL'  =>'Enter your long URL',
+
+    //Route: /admin/Dashboard
+    'Dashboard' => 'Dashboard',
+    'All' => 'All',
+    'Me' => 'Me',
+    'Guests' => 'Guests',
+    'Free_Space' => 'Free Space',
+    'of' => 'of',
+    'URLs' => 'URLs',
+    'Clicks' => 'Clicks',
+    'Users' => 'Users',
+    'My_URLs' => 'My URLs',
+    'Add_URL' =>'Add URL',
+    'Short_URL' => 'Short URL',
+    'Destination_URL' => 'Destination URL',
+    'CLICKS' => 'CLICKS',
+    'CREATED_AT' => 'CREATED AT',
+    'ACTIONS' => 'ACTIONS'
+
+
+
+
 ];

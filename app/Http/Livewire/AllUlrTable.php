@@ -144,7 +144,7 @@ final class AllUlrTable extends PowerGridComponent
                 ->searchable(),
 
             Column::add()
-                ->title('Short URL')
+                ->title('string.Short_URL')
                 ->field('keyword')
                 ->sortable()
                 ->searchable(),
